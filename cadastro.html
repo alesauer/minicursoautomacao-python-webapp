@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Simplifica Python</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .custom-form {
+            max-width: 500px; /* Set the maximum width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        .centered-image {
+            display: block;
+            margin: 0 auto;
+            width: 8%; /* Set the width of the image */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Cadastro de Alunos no Curso Simplifica Python</h1>
+    <img src="simplifica.jpg" class="centered-image" alt="Logo Simplifica Python">
+    <form action="cadastro.php" method="post" class="custom-form">    
+        <div class="form-group">
+            <label for="text">Nome do Cliente:</label> 
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-address-book"></i>
+                    </div>
+                </div> 
+                <input id="text" name="text" placeholder="Digite o nome do Cliente" type="text" required="required" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label> 
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-send"></i>
+                    </div>
+                </div> 
+                <input id="email" name="email" placeholder="Endereço de e-mail" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="endereco">Endereço:</label> 
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-home"></i>
+                    </div>
+                </div> 
+                <input id="endereco" name="endereco" placeholder="Endereço" type="text" class="form-control">
+            </div>
+        </div>
+      <div class="form-group">
+        <label for="telefone">Telefone:</label> 
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-phone"></i>
+            </div>
+          </div> 
+          <input id="telefone" name="telefone" placeholder="Telefone de contato" type="text" class="form-control">
+        </div>
+      </div> 
+      <div class="form-group">
+        <button name="submit" type="submit" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </form>
+  </body>
+</html>
